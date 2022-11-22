@@ -1,11 +1,5 @@
 let data=
 [
-    {
-        "list":"list"
-    },
-    {
-        "list":"整理電腦桌面"
-    }
 ]
 let checkbox=document.querySelector(".checkbox");
 let newList=document.querySelector(".newItem");
