@@ -98,9 +98,16 @@ h1
     color: #9F9A91;
     letter-spacing: 0.7px;
 }
+.card_list .tab li
+{
+    width: 100%;
+    border-bottom:2px solid #EFEFEF;
+    text-align: center;
+    padding-bottom:15px;
+}
 .tab .active:hover
 {
-    width:50px;
+    /* width:100% */
     text-align: center;
     border-bottom:2px solid #000;
     color:#000;
