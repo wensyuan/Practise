@@ -21,10 +21,10 @@
 
 
         <div class="card_list">
-            <ul class="tab">
-                <li class="active" data-status="all">全部</li>
-                <li class="active" data-status="work">待完成</li>
-                <li class="active" data-status="done">已完成</li>
+            <ul class="tab" id="tab">
+                <li class="active" data-tab="all">全部</li>
+                <li data-tab="work">待完成</li>
+                <li data-tab="done">已完成</li>
             </ul>
             <div class="card_content">
                 <ul class="list">
@@ -50,7 +50,7 @@
 
 
         <div class="list_footer">
-            <p>5個待完成項目</p>
+            <p><span id="workNum">0</span>個待完成項目</p>
             <a href="#">清除已完成項目</a>
         </div>
     </div>
