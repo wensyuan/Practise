@@ -1,0 +1,144 @@
+*
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+
+    box-sizing: border-box;
+}
+
+.background img
+{
+    width: 100%;
+    position: relative;
+}
+.wrap
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo
+{
+    margin: 25px 0;
+}
+
+.container
+{
+    width:744px ;
+    height:400px;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px #F8D45A, 0 0 0 8px #FFFCEF, 0 2px 20px 0 rgba(0,0,0,0.15);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* tab */
+.tab
+{
+    display: flex;
+    margin:30px 0px 20px 0px;
+}
+.tab li
+{
+    border: 2px solid #2A2A2A;
+    box-shadow: 0 1px 0 0 #2A2A2A;
+    border-radius: 4px;
+    width:100px;
+    text-align: center;
+    margin:0px 5px;
+    padding:5px 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.tab li:hover
+{
+    background: #F8D45A;
+}
+
+/* search */
+.search 
+{
+    display: flex;
+}
+.search .nameList
+{
+    width:350px;
+    background-color: #899E39;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px;
+}
+.search .nameList span
+{
+    font-weight: bold;
+    padding:11px;
+    font-size: 16px;
+}
+.search .nameList input
+{
+    width:254px;
+    padding:6px;
+    border-radius: 4px;
+    border: #899E39;
+    font-weight: bold;
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 15px;
+    color: #9A9A9A;
+    letter-spacing: 1px;
+}
+.search input:focus
+{
+   outline: none;
+}
+.search .btn
+{
+    background-color: #899E39;
+    border: #899E39;
+    color: #fff;
+    font-weight: bold;
+    width:100px;
+    border-radius: 4px;
+    margin-left:12px;
+    font-size: 16px;
+}
+/* 排序篩選 */
+.downMenu
+{
+    margin: 20px;
+    width: 100%;
+}
+.downMenu .list
+{
+    
+    border: 1px solid #9A9A9A;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    margin-right:50px;
+}
+.downMenu select>option
+{
+    float: right;
+    font-weight: bold;
+    text-align:center;
+}
+
+/* 表單 */
+.table
+{
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    width: 650px;
+    background: #F4F1EA;
+}
+.table tr th
+{
+    padding: 10px 22px;
+    font-weight: bold;
+}
