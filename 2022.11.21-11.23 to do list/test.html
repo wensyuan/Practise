@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿倫行事曆</title>
+
+    <link rel="stylesheet" href="css2.css">
+    
+</head>
+<body>
+    <div class="container">
+            <h1>仲倫光光寶貝<br>Todo List</h1>
+        <div class="newList">
+            <input type="text" placeholder="新增待辦事項" class="newItem" id="inputText">
+            <div class="btn">
+                <a href="#" id="addBTN">+</a>
+            </div>
+        </div>
+
+
+        <div class="card_list">
+            <ul class="tab" id="tab">
+                <li class="active" data-tab="all">ALL</li>
+                <li data-tab="work">光光還沒完成</li>
+                <li data-tab="done">光光已完成</li>
+            </ul>
+            <div class="card_content">
+                <ul class="list" id="todoList">
+                    <!-- <li>
+                        <label class="checkbox" for=""> 
+                            <input type="checkbox"><span>我是待辦事項1</span>
+                        </label>
+                        <a href="#" class="delete">X</a>
+                    </li>
+                    <li>
+                        <label class="checkbox" for="">
+                            <input type="checkbox"><span>我是待辦事項2</span>
+                        </label>
+                        <a href="#" class="delete">X</a>
+                    </li>
+                    <li>
+                        <label class="checkbox" for="">
+                            <input type="checkbox"><span>我是待辦事項3</span>   
+                        </label>
+                        <a href="#" class="delete">X</a>
+                    </li> -->
+                </ul>
+
+
+        <div class="list_footer">
+            <p><span id="workNum">0</span>個待完成項目</p>
+            <a href="#" id="deleteBtn">清除已完成項目</a>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="alltest.js"></script>
+</body>
+</html>
