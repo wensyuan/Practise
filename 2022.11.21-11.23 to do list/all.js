@@ -1,6 +1,4 @@
-let data=
-[
-]
+let data=[]
 let checkbox=document.querySelector(".checkbox");
 let newList=document.querySelector(".newItem");
 let newBtn=document.querySelector(".btn");
@@ -45,6 +43,7 @@ list.addEventListener("click",function(e)
     data.splice(num,1);
     alert("刪除成功");
     reData();
+
 })
 // tab 切換(css樣式)
 const tab=document.getElementById('tab');
@@ -59,9 +58,10 @@ function changeTab(e)
         i.classList.remove('active');
     });
     e.target.classList.add('active');
+    updateList();
 }
 //更新待辦事項
-function updataList()
+function updateList()
 {
     let showData=[];
     if(toggleStatus == "all")
@@ -74,6 +74,9 @@ function updataList()
     }
 
     const workNum=document.getElementById("workNum");
-    let todoLength=list.filter((i)=>i.checked=="")
+    let todoLength=list.filter((i)=>i.checked=="");
     workNum.textContent=todoLength.length;
+
+    reData();
 }
+updateList();
